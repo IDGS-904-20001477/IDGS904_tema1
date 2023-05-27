@@ -1,0 +1,5 @@
+azul,blue
+rojo,red
+puerta,door
+pelota,ball
+pluma,pencil

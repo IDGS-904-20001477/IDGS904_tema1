@@ -1,0 +1,15 @@
+﻿@model IDGS904_tema1.Models.Alumnos
+
+@{
+    ViewBag.Title = "Registrar";
+}
+
+<h2>Registrar</h2>
+
+@using (Html.BeginForm())
+            {
+                <div class="form-horizontal">
+                    @Html.LabelFor(model => model.Nombre)
+                </div>
+            }
+

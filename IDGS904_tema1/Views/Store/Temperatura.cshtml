@@ -1,0 +1,33 @@
+﻿@model IDGS904_tema1.Models.Temperatura
+
+@{
+    ViewBag.Title = "Temperatura";
+}
+
+<h2>Temperatura</h2>
+<form action="/Store/CalcularTemperatura" method="POST">
+    <div class="row">
+        <div class="col-md-4">
+            <h1 class="fw-bold mb-5">Convertidor</h1>
+            <div class="mb-3">
+                @Html.LabelFor(model => model.Grados,
+                htmlAttributes: new { @class = "form-label" })
+                @Html.EditorFor(model => model.Grados,
+                   new { htmlAttributes = new { @class = "" } })
+            </div>
+            <div class="mb-3">
+                @Html.RadioButtonFor(model => model.Selecccionado, "Celsius", new { id = "Celsius" }) @Html.Label("Celsius", "A Celsius")
+                @Html.RadioButtonFor(model => model.Selecccionado, "Fahrenheit", new { id = "Fahrenheit" }) @Html.Label("Fahrenheit", "A Fahrenheit")
+            </div>
+            <button type="submit" class="btn btn-info">CALCULAR</button>
+            <hr />
+        </div>
+        <div class="col-md-8">
+        <div class="mb-3">
+            <p class="fs-1 text-center">
+                @TempData["Resultado"]
+            </p>
+        </div>
+            </div>
+    </div>
+</form>

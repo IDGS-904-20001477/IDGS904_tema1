@@ -1,0 +1,32 @@
+﻿@model IDGS904_tema1.Models.Distancia
+
+@{
+    ViewBag.Title = "Obtener Distancia";
+}
+
+<h2>ObtenerDistancia</h2>
+<div class="container">
+    <form action="/Distancia/ResultadoFinal" method="POST">
+        <label for="input1">X1:</label>
+        <input type="text" id="X1" name="X1"><br>
+
+        <label for="input2">Y1:</label>
+        <input type="text" id="Y1" name="Y1"><br>
+
+        <label for="input3">X2:</label>
+        <input type="text" id="X2" name="X2"><br>
+
+        <label for="input4">Y2:</label>
+        <input type="text" id="Y2" name="Y2"><br>
+
+        <label for="input5">X3:</label>
+        <input type="text" id="X3" name="X3"><br>
+
+        <label for="input6">Y3:</label>
+        <input type="text" id="Y3" name="Y3"><br>
+
+        <button type="submit" class="btn btn-outline-dark rounded-pill px-5 mt-5">CALCULAR</button>
+    </form>
+</div>
+
+
